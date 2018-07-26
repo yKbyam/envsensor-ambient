@@ -23,7 +23,8 @@ while True:
     if data is not None:
 
         if data.tick_last_update > latest_update:
-            print(vars(data))
+            # print(vars(data))
+            print('val_noise:{0}',format(data.val_noise))
             # print('Illumination: {} lx'.format(data.val_light))
 
         latest_update = data.tick_last_update
